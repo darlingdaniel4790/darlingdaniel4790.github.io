@@ -1,0 +1,60 @@
+/* Basic styling for the navbar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 1.2rem;
+  }
+  
+  /* Hide the mobile menu icon on larger screens */
+  #mobileMenu {
+    display: none;
+  }
+  
+  /* Styles for the dropdown menu */
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    #mobileMenu {
+      display: block;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  
+    .show {
+      display: block;
+      align-items: end;
+    }
+  }
+  
